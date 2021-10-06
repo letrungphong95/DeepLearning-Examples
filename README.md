@@ -27,7 +27,7 @@ $ ls
 + [CIFAR10](https://www.kaggle.com/c/cifar-10/data): Download and put into the `/data` folder 
 ## 3. Examples  
 
-- **1 - Linear Regression** ([src](https://github.com/letrungphong95/DeepLearning-Examples/src/linear_regression)). 
-- **2 - Logistic Regression** ([src](https://github.com/letrungphong95/DeepLearning-Examples/src/logistic_regression)). 
-- **3 - Word2Vec (Word Embedding)** ([src](https://github.com/letrungphong95/DeepLearning-Examples/src/word2vec)).
-- **4 - GBDT (Gradient Boosted Decision Trees)** ([src](https://github.com/letrungphong95/DeepLearning-Examples/src/gbdt)).
+- **1 - Linear Regression** ([src](https://github.com/letrungphong95/DeepLearning-Examples/tree/dev/src/linear_regression)). 
+- **2 - Logistic Regression** ([src](https://github.com/letrungphong95/DeepLearning-Examples/tree/dev/src/logistic_regression)). 
+- **3 - Word2Vec (Word Embedding)** ([src](https://github.com/letrungphong95/DeepLearning-Examples/tree/dev/src/word2vec)).
+- **4 - GBDT (Gradient Boosted Decision Trees)** ([src](https://github.com/letrungphong95/DeepLearning-Examples/tree/dev/src/gbdt)).

@@ -4,14 +4,6 @@
 __author__ = Le Trung Phong
 __email__ = letrungphong95@gmail.com
 __status__ = Developing
-
-Ref:
-+ Tensorflow 
-https://github.com/aymericdamien/TensorFlow-Examples/tree/master/tensorflow_v2
-https://github.com/dragen1860/TensorFlow-2.x-Tutorials
-
-+ Pytorch 
-https://github.com/L1aoXingyu/pytorch-beginner
 ```
 
 ## 1. Building

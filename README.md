@@ -1,4 +1,4 @@
-# DeepLearning Examples in Tensorflow, Pytorch, Pytorch Lightning frameworks 
+# Deep Learning Examples in Tensorflow, Pytorch, Pytorch Lightning frameworks 
 
 ```
 __author__ = Le Trung Phong

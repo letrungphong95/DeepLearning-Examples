@@ -1,5 +1,5 @@
-# Runing Linear Regression in Tensorflow, Pytorch, and Pytorch Lightning model 
-In `src/linear_regression` folder, run 
+# Runing Logistic Regression in Tensorflow, Pytorch, and Pytorch Lightning model 
+In `src/logistic_regression` folder, run 
 
 + Tensorflow 
 ```

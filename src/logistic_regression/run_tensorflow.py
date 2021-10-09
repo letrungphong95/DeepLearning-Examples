@@ -28,23 +28,22 @@ class CIFAR10DataGenerator(tf.keras.utils.Sequence):
         self.batch_size = batch_size
         self.input_size = input_size 
         self.shuffle = shuffle
-        self.list_names, self.labels = self._read_csv()
+        self._read_csv()
         
     def _read_csv(self):
         if self.stage == 'train':
             data = pd.read_csv(self.data_path / 'trainLabels.csv')
         elif self.stage == 'test':
             data = pd.read_csv(self.data_path / 'test.csv')
-        list_names = list(data['id'])
-        labels = {i: self.classes[v] for i, v in zip(data['id'], data['label'])}
-        return list_names, labels
+        self.list_names = list(data['id'])
+        self.labels = {i: self.classes[v] for i, v in zip(data['id'], data['label'])}
 
     def __len__(self):
         """This function computes the number of batch an epoch
         """
         return int(np.floor(len(self.list_names) / self.batch_size))
 
-    def __getitem__(self, index):
+    def __getitem__(self, index: int):
         """This function generates a batch of data
         """
         # get batch name

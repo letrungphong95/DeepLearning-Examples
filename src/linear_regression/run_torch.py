@@ -39,7 +39,7 @@ def main():
     batch_size = 64
     epochs = 200 
     learning_rate = 0.01 
-    result = 'model'
+    result_dir = 'model/model.pth'
 
     # Dataset
     X_train, Y_train, X_test, Y_test = load_data(data_path='../../data/housing.csv')
@@ -72,7 +72,7 @@ def main():
             print("Epoch {}: Train loss: {} -- Test loss: {}".format(epoch, train_sum_loss/len(train_loader), test_loss))        
         
     # Saving model 
-    torch.save(model.state_dict(), result)
+    torch.save(model.state_dict(), result_dir)
 
 
 if __name__ == '__main__':

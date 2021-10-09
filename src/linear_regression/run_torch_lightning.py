@@ -23,7 +23,7 @@ class LinearRegression(nn.Module):
         return self.model(x)
 
 
-class HousingDataModule(plt.LightningDataModule):
+class HousingLitDataModule(plt.LightningDataModule):
     """
     """
     def __init__(self,
@@ -141,7 +141,7 @@ def main():
     learning_rate = 0.01 
 
     # Dataset 
-    housing_data = HousingDataModule(data_dir='../../data/housing.csv', batch_size=batch_size)
+    housing_data = HousingLitDataModule(data_dir='../../data/housing.csv', batch_size=batch_size)
     housing_data.prepare_data()
 
     # Model 

@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 import numpy as np
 
 class LinearRegression(Layer):
-    def __init__(self, feature=13):
+    def __init__(self, feature: int=13):
         """
         """
         super().__init__()
@@ -53,8 +53,7 @@ def main():
 
     # Define model 
     model = LinearRegression(feature=num_feature)
-    print(model.summary())
-    criteon = tf.keras.losses.MeanSquaredError()
+    criterion = tf.keras.losses.MeanSquaredError()
     optimizer = tf.keras.optimizers.Adam(learning_rate)
 
     # Train model 
@@ -64,14 +63,14 @@ def main():
         for x, y in train_loader:
             with tf.GradientTape() as tage:
                 logit = model(x) # [batch, 1]
-                loss = criteon(tf.squeeze(logit, axis=1), y) # [batch]
+                loss = criterion(tf.squeeze(logit, axis=1), y) # [batch]
                 train_sum_loss += loss
             grads = tage.gradient(loss, model.trainable_variables)
             optimizer.apply_gradients(zip(grads, model.trainable_variables))
         if epoch%20 == 0:
             for x_test, y_test in test_loader:
                 logit = model(x_test)
-                loss = criteon(tf.squeeze(logit, axis=1), y_test)
+                loss = criterion(tf.squeeze(logit, axis=1), y_test)
                 test_sum_loss += loss
             print("Epoch {}: Train loss: {} -- Test loss: {}".format(epoch, \
                 train_sum_loss/len(train_loader), test_sum_loss/len(test_loader)))

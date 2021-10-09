@@ -21,6 +21,7 @@ class CIFAR10DataGenerator(tf.keras.utils.Sequence):
             input_size: tuple=(32, 32, 3),
             shuffle: bool=True
         ):
+        super().__init__()
         self.classes = {v: i for i, v in enumerate(classes)}
         self.num_classes = len(classes)
         self.data_path = Path(data_path) 

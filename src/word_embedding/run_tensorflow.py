@@ -58,7 +58,6 @@ class WikiDataGenerator(tf.keras.utils.Sequence):
                         for i in range(window_size, vocab_size-window_size)]
         return word_pair, vocab, word_to_idx, vocab_size
         
-
     def __len__(self):
         """
         """
@@ -108,7 +107,7 @@ def main():
     """
     """
     # Hyperparameters 
-    max_vocabulary_size = 50000 # Total number of different words in the vocabulary.
+    max_vocabulary_size = 500000 # Total number of different words in the vocabulary.
     embedding_size = 200
     learning_rate = 0.01
     epochs = 5

@@ -29,7 +29,7 @@ $ ls
 - **1 - Linear Regression** ([src](https://github.com/letrungphong95/DeepLearning-Examples/tree/dev/src/linear_regression)). 
 - **2 - Logistic Regression** ([src](https://github.com/letrungphong95/DeepLearning-Examples/tree/dev/src/logistic_regression)). 
 - **3 - Word Embedding** ([src](https://github.com/letrungphong95/DeepLearning-Examples/tree/dev/src/word_embedding)).
-- **4 - GBDT (Gradient Boosted Decision Trees)** ([src](https://github.com/letrungphong95/DeepLearning-Examples/tree/dev/src/gbdt)).
+
 
 ## References:
 + [1] https://github.com/aymericdamien/TensorFlow-Examples/tree/master/tensorflow_v2

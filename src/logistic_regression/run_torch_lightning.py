@@ -1,10 +1,10 @@
 from torch.utils.data import Dataset, DataLoader
 from pytorch_lightning.callbacks import ModelCheckpoint
-import torchvision.transforms as transforms
-from PIL import Image
-from pathlib import Path
-from torch import nn 
 from typing import Optional, List
+from pathlib import Path
+from PIL import Image
+from torch import nn 
+import torchvision.transforms as transforms
 import pytorch_lightning as plt
 import pandas as pd
 import torch

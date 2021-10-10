@@ -1,7 +1,7 @@
 from torch.utils.data import Dataset, DataLoader
-from torch import nn
 from torchsummary import summary
 from tqdm import tqdm
+from torch import nn
 import torch.nn.functional as F
 import collections
 import torch
